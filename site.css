@@ -1,0 +1,20 @@
+:root{color-scheme:light;--ink:#173656;--link:#075c99;--paper:#fff;--line:#c5dce9}
+*{box-sizing:border-box}
+body{font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:808px;margin:40px auto;padding:24px;color:var(--ink);background:#f4f9fc;overflow-wrap:anywhere}
+h1,h2{line-height:1.25;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,7vw,3rem);margin:.3em 0 .5em}
+h2{font-size:1.4rem;margin-top:1.7em}
+a{color:var(--link);text-underline-offset:.18em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #d97706;outline-offset:5px;border-radius:4px}
+nav{display:flex;gap:12px 24px;flex-wrap:wrap;margin-bottom:32px}
+.eyebrow{font-size:.85rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.notice{border:1px solid var(--line);border-radius:18px;padding:24px;margin:28px 0;background:var(--paper);box-shadow:0 4px 0 #dceaf2}
+.notice h2{margin-top:0}
+.button{display:inline-block;max-width:100%;padding:13px 23px;border-radius:12px;border:1px solid #064a7b;background:#075c99;color:white;font-weight:700;line-height:1.4;text-decoration:none;text-align:center;box-shadow:0 3px 0 #063d64}
+.button:hover{background:#064a7b}
+.button:active{transform:translateY(1px);box-shadow:0 2px 0 #063d64}
+.muted{font-size:.94rem;color:#405c74}
+li+li{margin-top:10px}
+code{font-size:.92em;background:#e7f0f6;padding:.1em .3em;border-radius:4px}
+@media(max-width:480px){body{margin:12px auto;padding:20px;font-size:16px}.notice{padding:20px}.button{width:100%}nav{margin-bottom:24px}}
